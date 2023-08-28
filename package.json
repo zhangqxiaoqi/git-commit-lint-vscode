@@ -1,9 +1,9 @@
 {
-  "name": "git-commit-lint-vscode",
-  "displayName": "git-commit-lint-vscode",
+  "name": "tf-commit-lint",
+  "displayName": "tf-commit-lint",
   "description": "git提交规范",
-  "version": "2.1.0",
-  "publisher": "UvDream",
+  "version": "2.0.0",
+  "publisher": "tf-commit-lint",
   "engines": {
     "vscode": "^1.76.0"
   },
@@ -11,13 +11,13 @@
     "Other"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/UvDream/git-commit-lint-vscode/blob/master/README.md",
+  "homepage": "",
   "bugs": {
-    "url": "https://github.com/UvDream/git-commit-lint-vscode/issues"
+    "url": ""
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/UvDream/git-commit-lint-vscode"
+    "url": ""
   },
   "keywords": [
     "git",
@@ -29,12 +29,12 @@
   "main": "./out/extension.js",
   "contributes": {
     "configuration": {
-      "title": "git-commit-lint-vscode",
+      "title": "tf-commit-lint",
       "properties": {
         "gitCommitLintVscode.customFormat": {
           "type": "string",
-          "default": "${type}${emoji}: ",
-          "description": "自定义 git 提交格式(默认格式: '${type}${emoji}:"
+          "default": "${type}: ",
+          "description": "自定义 git 提交格式(默认格式: '${type}:"
         },
         "gitCommitLintVscode.customType": {
           "type": "array",
@@ -181,9 +181,9 @@
     "@types/mocha": "^10.0.1",
     "@types/node": "^18.14.6",
     "@types/vscode": "^1.76.0",
+    "@vscode/test-electron": "^2.3.0",
     "mocha": "^10.2.0",
     "tslint": "^6.1.3",
-    "typescript": "^4.9.5",
-    "@vscode/test-electron": "^2.3.0"
+    "typescript": "^5.2.2"
   }
 }
